@@ -18,7 +18,7 @@ const Home = React.createClass({
     return {
       content: { projects: [] },
       commits: { list: [] },
-      currentProject: "",
+      currentProject: '',
       starsProject: 0,
       forksProject: 0
     };
@@ -45,7 +45,13 @@ const Home = React.createClass({
         <div>
           { projects.map((project, i) => {
             return (
-              <a key={ i } className="sidebar__project" href={"#/" + project.name } data-project={ project.name } data-stars={ project.stargazers_count } data-forks={ project.forks_count } onClick={ this._handleClick }>
+              <a key={ i }
+               className="sidebar__project"
+               href={"#/" + project.name }
+               data-project={ project.name }
+               data-stars={ project.stargazers_count }
+               data-forks={ project.forks_count }
+               onClick={ this._handleClick }>
                 { project.name }
               </a>
             );
@@ -65,7 +71,10 @@ const Home = React.createClass({
           </nav>
         </div>
         <div className="project">
-          <CommitsList commits={ this.state.commits.list } currentProject={ this.state.currentProject } starsProject={ this.state.starsProject } forksProject={ this.state.forksProject } /> 
+          <CommitsList commits={ this.state.commits.list }
+            currentProject={ this.state.currentProject }
+            starsProject={ this.state.starsProject }
+            forksProject={ this.state.forksProject } /> 
         </div>
       </div>
     )

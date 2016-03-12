@@ -24,7 +24,7 @@ const CommitsList = React.createClass({
       currentProject: nextProps.currentProject
     });
 
-    document.querySelector(".project").scrollTop = 0;
+    document.querySelector('.project').scrollTop = 0;
   },
 
   moreCommits() {
@@ -36,8 +36,8 @@ const CommitsList = React.createClass({
   },
 
   formateDate(date) {
-    var newDate = date.slice(0, 10).split("-");
-    newDate = newDate[2] + "/" + newDate[1] + "/" + newDate[0];
+    var newDate = date.slice(0, 10).split('-');
+    newDate = newDate[2] + '/' + newDate[1] + '/' + newDate[0];
     return newDate;
   },
 
@@ -77,7 +77,6 @@ const CommitsList = React.createClass({
 
     return null;
   }
-
 });
 
 export default CommitsList;

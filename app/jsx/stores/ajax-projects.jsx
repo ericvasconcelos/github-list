@@ -41,7 +41,6 @@ const ajaxProjectsStore  = Reflux.createStore({
 
     request.send();
   }
-
 });
 
 export default ajaxProjectsStore;

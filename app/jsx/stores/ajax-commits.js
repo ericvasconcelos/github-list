@@ -33,7 +33,6 @@ const ajaxCommitsStore = Reflux.createStore({
 
     request.send();
   }
-
 });
 
 export default ajaxCommitsStore;
